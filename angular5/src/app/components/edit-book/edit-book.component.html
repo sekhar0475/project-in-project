@@ -1,0 +1,131 @@
+<ul class="nav nav-tabs navClass">
+  <li role="presentation" class="active"><a routerLink="/books-list">List of books    /</a></li>
+  <li role="presentation"><a routerLink="/add-book">Add new book    /</a></li>
+</ul>
+<div class="jumbotron">
+	<h5 class="display-4 tempHead" style="text-align: center;">Edit Book from Library!</h5>
+
+	<form id="testing" (ngSubmit)="processBasicInfo()" class="formStyl">
+	    <div class="additional-form row" *ngIf="currentBook">
+
+	        <div class="form-group col-md-12">
+	            <mat-form-field style="width: 90%;">
+	            	<label class="col-md-4" for="exampleFormControlInput1">Book Title</label>
+	                <input required
+	                    matInput  
+	                    class="form-control col-md-5 inpts"
+	                    placeholder="Title" [formControl]="titleFC" name="title" id="titleInpt"
+	                    [(ngModel)]="currentBook.title">
+	                <i matSuffix class="fa fa-caret-down"></i>
+	                <mat-error *ngIf="titleFC.hasError('required')">
+	                    Title is 
+	                    <strong>required</strong>
+	                </mat-error>
+	            </mat-form-field>
+	        </div>
+
+	        <div class="form-group col-md-12">
+	            <mat-form-field style="width: 90%;">
+	            	<label class="col-md-4" for="exampleFormControlInput1" class="col-md-5">Author of the Book</label>
+	                <!-- <input required 
+	                    matInput 
+	                    class="form-control col-md-5 inpts"
+	                    placeholder="Author" [formControl]="authorFC" name="author" id="authorInpt"
+	                    [(ngModel)]="newBook.author"> -->
+
+	                <!-- <mat-form-field> -->
+					<mat-select placeholder="Author Name" style="display: block;"
+						required
+						matInput
+						(change)="authorChanged($event);"
+						[(ngModel)]="selectedAuthor"
+						class="form-control col-md-5 inpts"
+						[formControl]="authorFC" name="author" id="authorInpt">
+						<mat-option *ngFor="let author of authors" [value]="author.givenName">
+						  {{ author.givenName }}
+						</mat-option>
+					</mat-select>
+					<!-- </mat-form-field> -->
+
+	                <i matSuffix class="fa fa-caret-down"></i>
+	                <mat-error *ngIf="authorFC.hasError('required')">
+	                    Author is 
+	                    <strong>required</strong>
+	                </mat-error>
+	            </mat-form-field>
+	        </div>
+
+	        <div class="form-group col-md-12">
+	            <mat-form-field style="width: 90%;">
+	            	<label class="col-md-4" for="exampleFormControlInput1">ISBN Code</label>
+	                <input required
+	                    matInput  
+	                    class="form-control col-md-5 inpts"
+	                    placeholder="ISBN" [formControl]="isbnFC" name="isbn" id="isbnInpt"
+	                    [(ngModel)]="currentBook.ISBN">
+	                <i matSuffix class="fa fa-caret-down"></i>
+	                <mat-error *ngIf="isbnFC.hasError('required')">
+	                    ISBN is 
+	                    <strong>required</strong>
+	                </mat-error>
+	            </mat-form-field>
+	        </div>
+
+	        <div class="form-group col-md-12">
+	            <mat-form-field style="width: 90%;">
+	            	<label class="col-md-4" for="exampleFormControlInput1">Edition</label>
+	                <input 
+	                    matInput  
+	                    class="form-control col-md-5 inpts"
+	                    placeholder="Edition" name="edition" id="editionInpt"
+	                    [(ngModel)]="currentBook.edition">
+	                <i matSuffix class="fa fa-caret-down"></i>
+	            </mat-form-field>
+	        </div>
+
+	        <div class="col-md-12">
+	        	<div class="form-group frgp" *ngFor="let chaps of chapters; let in = index;">
+		        	<div class="row">
+			        	<h3>chapter {{in+1}}</h3>
+			        	<mat-form-field style="width: 90%;">
+			            	<label class="col-md-12" for="exampleFormControlInput1">Title</label>
+			                <input 
+			                    matInput  
+			                    class="form-control col-md-12 inpts2"
+			                    placeholder="Chapter Title"  name="title-{{in}}" id="chapTItle"
+			                    [(ngModel)]="chapters[in].title">
+			                <i matSuffix class="fa fa-caret-down"></i>
+			            </mat-form-field>
+			            <mat-form-field style="width: 90%;">
+			            	<label class="col-md-12" for="exampleFormControlInput1">Start Page</label>
+			                <input 
+			                    matInput  
+			                    class="form-control col-md-12 inpts2"
+			                    placeholder="Starting Page"  name="startPage-{{in}}" id="chapTItle"
+			                    [(ngModel)]="chapters[in].startPage">
+			                <i matSuffix class="fa fa-caret-down"></i>
+			            </mat-form-field>
+			            <mat-form-field style="width: 90%;">
+			            	<label class="col-md-12" for="exampleFormControlInput1">No of pages</label>
+			                <input 
+			                    matInput  
+			                    class="form-control col-md-12 inpts2"
+			                    placeholder="Number of pages"  name="numberOfPages-{{in}}" id="chapTItle"
+			                    [(ngModel)]="chapters[in].numberOfPages">
+			                <i matSuffix class="fa fa-caret-down"></i>
+			            </mat-form-field>
+			        </div>
+		        </div>
+	        </div>
+
+	        <div class="chaptersSec" (click)="addChap()">
+	        	ADD Chapters <div class="glyphicon glyphicon-plus"></div>
+	        </div> 
+
+	        <div class="action-buttons">
+	            <button style="top: 60px; left: 50px;" mat-raised-button color="primary" type="submit">Submit</button>
+	            <!-- <button type="submit">Proceed</button> -->
+	        </div>
+	    </div>
+	</form>
+</div>

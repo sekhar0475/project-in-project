@@ -1,0 +1,18 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.titleHead{
+	position: relative;
+    left: 125px;
+    top: -80px;
+}
+.mainCont{
+	margin: 0 auto !important;
+    width: 60% !important;
+    padding-top: 100px !important;
+}
+.edit-butn{
+	position: absolute;
+    top: 90px;
+    left: 135px;
+    font-size: 15px;
+}

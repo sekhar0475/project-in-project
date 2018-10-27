@@ -1,0 +1,71 @@
+<!-- <ul class="nav nav-tabs navClass">
+  <li role="presentation" class="active"><a routerLink="/books-list">List of books    /</a></li>
+  <li role="presentation"><a routerLink="/add-book">Add new book    /</a></li>
+</ul>
+<div class="jumbotron">
+  <h5 class="display-4 tempHead" style="margin-top: 25px;">List Of Books in the Library!</h5>
+  <div class="bottomTable" style="margin-top: 100px;">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">Title</th>
+          <th scope="col">Author</th>
+          <th scope="col">Publishing Date</th>
+          <th scope="col">Publisher</th>
+          <th scope="col">ISBN</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of books; let i = index;">
+          <td>{{item.id}}</td>
+          <th scope="row">
+            <button type="button" class="btn btn-link" routerLink="/book/{{item.id}}">{{item.title}}</button>
+          </th>
+          <td>{{item.author.givenName}}</td>
+          <td>{{item.publishingDate}}</td>
+          <td>{{item.publisher}}</td>
+          <td>{{item.ISBN}}</td>
+          <td>
+            <button type="button" class="btn btn-link" routerLink="/edit-book/{{item.id}}">Edit</button>/<button type="button" class="btn btn-link" (click)='deleteBook(i)'>Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="addSec" routerLink="/add-book">
+      <div class="glyphicon glyphicon-plus"></div> Add Book
+    </div> 
+
+    <div>
+      <span>Showing 1 to {{books.length}} of {{books.length}} entries</span>
+      <nav aria-label="Page navigation example" style="position: absolute; right: 140px;">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" >1</a></li>
+          <li class="page-item"><a class="page-link" >2</a></li>
+          <li class="page-item"><a class="page-link" >3</a></li>
+          <li class="page-item">
+            <a class="page-link" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+ -->
+
+
+
+ <app-add-book (outputEvent)="fun1($event);" [titleInput]="title"></app-add-book>

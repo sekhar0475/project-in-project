@@ -1,0 +1,47 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.inpts{
+	/*border: solid 1px #123 !important;
+    width: 40% !important;
+    left: 15px;*/
+}
+.formStyl{
+	width: 50%;
+    margin: 0 auto;
+}
+.inpts2{
+	/*border: solid 1px #123 !important;
+    width: 90% !important;
+    left: 15px;*/
+}
+.mat-form-field-label{
+	display: none !important;
+}
+.mat-error{
+	text-align: right;
+    width: 35%;
+    color: #b13434;
+}
+.chaptersSec{
+	font-size: 18px;
+    position: relative;
+    left: 75%;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 36px;
+    color: #123;
+    background: #fff;
+}
+
+.chaptersSec:hover{
+	color: #fff;
+    background: #123;
+}
+.frgp{
+	display: block;
+    border: solid 1px #123;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    margin-left: 35px;
+}

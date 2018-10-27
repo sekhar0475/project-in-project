@@ -1,0 +1,47 @@
+<ul class="nav nav-tabs navClass">
+  <li role="presentation" class="active"><a routerLink="/books-list">List of books    /</a></li>
+  <li role="presentation"><a routerLink="/add-book">Add new book    /</a></li>
+</ul>
+<div class="jumbotron">
+	<h5 class="display-4 tempHead" style="text-align: center;">Details about the book!</h5>
+
+	<div *ngIf="currentBook" class="row mainCont">
+		<div class="col-md-12">
+			<div class="col-md-3">
+				<img style="width: 100px;"src="assets/book.jpg">
+				<button type="button" class="edit-butn btn btn-link" routerLink="/edit-book/{{id}}">Edit</button>
+			</div>
+			<div class="col-md-8 titleHead">
+				<h2>{{currentBook.title}}</h2>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="form-group">
+				<label class="col-md-4" for="exampleFormControlInput1">Author:</label>{{currentBook.author.givenName}}
+			</div>
+			<div class="form-group">
+				<label class="col-md-4" for="exampleFormControlInput1">About Author:</label>{{currentBook.author.bio}}
+			</div>
+			<div class="form-group">
+				<label class="col-md-4" for="exampleFormControlInput1">Publisher:</label>{{currentBook.publisher}}
+			</div>
+			<div class="form-group">
+				<label class="col-md-4" for="exampleFormControlInput1">Edition:</label>{{currentBook.edition}}
+			</div>
+			<div class="form-group">
+				<label class="col-md-4" for="exampleFormControlInput1">ISBN:</label>{{currentBook.ISBN}}
+			</div>
+			<div class="form-group">
+				<label class="col-md-4" for="exampleFormControlInput1">Published Date:</label>{{currentBook.publishingDate}}
+			</div>
+			<div class="form-group">
+				<h3>Chapters</h3>
+				<ul class="chapters">
+				  <li *ngFor="let chapter of currentBook.chapters">
+				    <span class="badge">#</span> {{chapter.title}}
+				  </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

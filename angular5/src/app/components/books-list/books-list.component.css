@@ -1,0 +1,12 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.addSec{
+    border: solid 1px #123;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.btn-link{
+	font-size: 14px !important;
+}
