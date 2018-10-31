@@ -7,3 +7,5 @@ https://www.pluralsight.com/blog/software-development/10-angular-and-typescript-
 http://suryakand-shinde.blogspot.com/2017/06/part-1-angular-2-with-aem-introduction.html
 
 http://karatejb.blogspot.com/2017/03/angular2-lazy-loading-and-preloading.html
+
+https://malcoded.com/posts/angular-fundamentals-modules
