@@ -9,3 +9,5 @@ http://suryakand-shinde.blogspot.com/2017/06/part-1-angular-2-with-aem-introduct
 http://karatejb.blogspot.com/2017/03/angular2-lazy-loading-and-preloading.html
 
 https://malcoded.com/posts/angular-fundamentals-modules
+
+****https://medium.com/ag-grid/webpack-tutorial-understanding-how-it-works-f73dfa164f01
