@@ -11,3 +11,8 @@ http://karatejb.blogspot.com/2017/03/angular2-lazy-loading-and-preloading.html
 https://malcoded.com/posts/angular-fundamentals-modules
 
 ****https://medium.com/ag-grid/webpack-tutorial-understanding-how-it-works-f73dfa164f01
+
+
+
+(All the service functions with HTTP ---example @@@***@@@) 
+https://www.sitepoint.com/angular-rxjs-create-api-service-rest-backend/
