@@ -16,3 +16,6 @@ https://malcoded.com/posts/angular-fundamentals-modules
 
 (All the service functions with HTTP ---example @@@***@@@) 
 https://www.sitepoint.com/angular-rxjs-create-api-service-rest-backend/
+
+
+https://snipcart.com/blog/drupal-headless-architecture-tutorial
