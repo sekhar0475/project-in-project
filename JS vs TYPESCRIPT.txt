@@ -1,0 +1,86 @@
+TYPESCRIPT EDITIONS:
+-------------------
+
+TypeScript 0.8 -> October 2012
+	TypeScript was first made public in October 2012 (at version 0.8), after two years of internal development at Microsoft.
+TypeScript 0.9 -> 2013
+	Added support for generics.
+TypeScript 1.0 -> 2014
+	TypeScript 1.0 was released at Microsoft's Build developer conference in 2014.
+	(NOTE : Visual Studio 2013 Update 2 provides built-in support for TypeScript.)
+-> 2014	
+	In July 2014, the development team announced a new TypeScript compiler, claiming 5× performance gains. 
+	Simultaneously, the source code, which was initially hosted on CodePlex, was moved to GitHub.
+TypeScript 2.0 -> September 2016
+	It introduced several features, including the ability for programmers to optionally prevent variables from being assigned null values,[27] sometimes referred to as the billion-dollar mistake.
+	
+
+(Version number)--(Release date)-->(Significant changes)
+
+0.8		1 October 2012
+0.9     18 June 2013
+1.1		6 October 2014			performance improvements
+1.3		12 November 2014		protected modifier, tuple types
+1.4		20 January 2015			union types, let and const declarations, template strings, type guards, type aliases
+1.5		20 July 2015			ES6 modules, namespace keyword, for..of support, decorators
+1.6		16 September 2015		JSX support, intersection types, local type declarations, 
+								abstract classes and methods, user-defined type guard functions
+1.7		30 November 2015		async and await support,
+1.8		22 February 2016		constraints generics, control flow analysis errors, string literal types, allowJs
+2.0		22 September 2016		null- and undefined-aware types, control flow based type analysis, 
+								discriminated union types, never type, readonly keyword, type of this for functions
+2.1		8 November 2016			keyof and lookup types, mapped types, object spread and rest,
+2.2		22 February 2017		mix-in classes, object type,
+2.3		27 April 2017			async iteration, generic parameter defaults, strict option
+2.4		27 June 2017			dynamic import expressions, string enums, improved inference for generics,
+								strict contravariance for callback parameters
+2.5		31 August 2017			optional catch clause variables
+2.6		31 October 2017			strict function types
+2.7		31 January 2018			constant-named properties, fixed length tuples
+2.8		27 March 2018			conditional types, improved keyof with intersection types
+2.9		14 May 2018				support for symbols and numeric literals in keyof and mapped object types
+3.0		30 July 2018			project references, extracting and spreading parameter lists with tuples
+3.1		27 September 2018		mappable tuple and array types
+3.2		30 November 2018		stricter checking for bind, call, and apply
+3.3		31 January 2019			relaxed rules on methods of union types, incremental builds for composite projects
+3.4		29 March 2019			faster incremental builds, type inference from generic functions,
+								readonly modifier for arrays, const assertions, type-checking globalThis
+3.5		29 May 2019				faster incremental builds, Omit helper type, Improved excess property checks in
+								union types, smarter union type checking	
+	
+=========================================================== *** ==============================================================
+
+ECMAScript EDITIONS: 
+-------------------
+
+Ver	Official Name	Description
+1	ECMAScript 1 (1997)	First Edition.
+2	ECMAScript 2 (1998)	Editorial changes only.
+3	ECMAScript 3 (1999)	Added Regular Expressions. 
+		Added try/catch.
+
+4	ECMAScript 4	Never released.
+5	ECMAScript 5 (2009)
+		Added "strict mode".
+		Added JSON support.
+		Added String.trim().
+		Added Array.isArray().
+		Added Array Iteration Methods.
+		
+5.1	ECMAScript 5.1 (2011)	Editorial changes.
+6	ECMAScript 2015 (ES 6)
+		Added let and const.
+		Added default parameter values.
+		Added Array.find().
+		Added Array.findIndex().
+
+7	ECMAScript 2016	Added exponential operator (**).
+		Added Array.prototype.includes.
+8	ECMAScript 2017	Added string padding.
+		Added new Object properties.
+		Added Async functions.
+		Added Shared Memory.
+9	ECMAScript 2018	Added rest / spread properties.
+		Added Asynchronous iteration.
+		Added Promise.finally().
+		Additions to RegExp
