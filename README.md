@@ -19,3 +19,7 @@ https://www.sitepoint.com/angular-rxjs-create-api-service-rest-backend/
 
 
 https://snipcart.com/blog/drupal-headless-architecture-tutorial
+
+
+BEST LINK for ES6 Modules:
+https://www.jvandemo.com/a-10-minute-primer-to-javascript-modules-module-formats-module-loaders-and-module-bundlers/
