@@ -1,0 +1,63 @@
+Counting characters from array items:
+=====================================
+
+stringArraay =  ["hello world","hello india","okay"];
+objFilterted = {}
+
+stringArraay.map((item)=>{
+//  console.log("item",item)
+    for (var i = 0; i < item.length; i++) {
+	//  console.log("item char",`${item.charAt(i)}`);
+        if (`${item.charAt(i)}` in objFilterted) {
+            let tempVal = objFilterted[`${item.charAt(i)}`];
+           objFilterted[`${item.charAt(i)}`] = tempVal + 1;
+        } else {
+            objFilterted[`${item.charAt(i)}`] = 1;
+        }
+    }
+})
+
+console.log("objFilterted",objFilterted)
+
+
+Write a function to return all the keys present in an object at any level
+
+function getKeys(obj, arr) {
+  Object.keys(obj).forEach(function(key) {
+    arr.push(key);
+    arr = getKeys(obj[key], arr);
+  });
+  return arr;
+}
+
+console.log(getKeys(object, []));
+
+
+Removing duplicate values:
+var names = ["Mike","Matt","Nancy","Adam","Jenny","Nancy","Carl","Carl"];
+arr = names.filter (function (value, index, array) { 
+    return array.indexOf (value) == index;
+});
+console.log(arr);
+
+string reversal:
+1)with reverse and split
+
+function wordsReverser(string){
+return string.split("").reverse().join("").split(" ").reverse().join(" ")  
+}
+
+console.log(wordsReverser('New string, same results.'));
+
+2) without split and reverse
+function reverseString(str) {
+  if (str === "")
+    return "";
+  else
+    return reverseString(str.substr(1)) + str.charAt(0);
+}
+reverseString("hello, world ...!");
+
+
+
+
